@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BlitzMove Transporter - خدمات نقل سريعة وموثوقة في جميع أنحاء المنطقة">
+    <meta name="description" content="BlitzMove Transporter - خدمات نقل سريعة وموثوقة">
     <meta name="keywords" content="نقل، ترانسبوتر، خدمات لوجستية، BlitzMove">
     <title>BlitzMove Transporter</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- زر تبديل اللغة -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('ar')" class="lang-btn active" id="ar-btn">العربية</button>
+        <button onclick="switchLanguage('de')" class="lang-btn" id="de-btn">Deutsch</button>
+    </div>
+
     <!-- القسم الرئيسي -->
     <header class="hero">
         <div class="container">
             <img src="logo.png" alt="BlitzMove Logo" class="logo">
-            <h1>BlitzMove Transporter</h1>
-            <p>حلول نقل سريعة وموثوقة لتلبية احتياجاتك!</p>
-            <a href="#services" class="cta-btn">استكشف خدماتنا</a>
+            <h1 data-ar="BlitzMove Transporter" data-de="BlitzMove Transporter">BlitzMove Transporter</h1>
+            <p data-ar="حلول نقل سريعة وموثوقة لتلبية احتياجاتك!" data-de="Schnelle und zuverlässige Transportlösungen für Ihre Bedürfnisse!"></p>
+            <a href="#services" class="cta-btn" data-ar="استكشف خدماتنا" data-de="Entdecken Sie unsere Dienstleistungen">استكشف خدماتنا</a>
         </div>
     </header>
 
     <!-- قسم من نحن -->
     <section id="about" class="section">
         <div class="container">
-            <h2>من نحن</h2>
-            <p>BlitzMove Transporter هي شركة رائدة في مجال النقل واللوجستيات، نقدم خدمات نقل مبتكرة وسريعة لضمان رضا عملائنا. مع فريق محترف وشبكة واسعة، نحن هنا لتسهيل عمليات النقل بكفاءة وأمان.</p>
+            <h2 data-ar="من نحن" data-de="Über uns">من نحن</h2>
+            <p data-ar="BlitzMove Transporter هي شركة رائدة في مجال النقل واللوجستيات، نقدم خدمات نقل مبتكرة وسريعة لضمان رضا عملائنا. مع فريق محترف وشبكة واسعة، نحن هنا لتسهيل عمليات النقل بكفاءة وأمان." data-de="BlitzMove Transporter ist ein führendes Unternehmen im Bereich Transport und Logistik. Wir bieten innovative und schnelle Transportlösungen, um die Zufriedenheit unserer Kunden zu gewährleisten. Mit einem professionellen Team und einem weitreichenden Netzwerk sind wir hier, um Transportprozesse effizient und sicher zu gestalten."></p>
         </div>
     </section>
 
     <!-- قسم الخدمات -->
     <section id="services" class="section">
         <div class="container">
-            <h2>خدماتنا</h2>
+            <h2 data-ar="خدماتنا" data-de="Unsere Dienstleistungen">خدماتنا</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <h3>نقل البضائع</h3>
-                    <p>نقل آمن وسريع للبضائع إلى أي وجهة مع ضمان الحفاظ على سلامتها.</p>
+                    <h3 data-ar="نقل البضائع" data-de="Waren transport">نقل البضائع</h3>
+                    <p data-ar="نقل آمن وسريع للبضائع إلى أي وجهة مع ضمان الحفاظ على سلامتها." data-de="Sicherer und schneller Transport von Waren an jedes Ziel mit Garantie für deren Sicherheit."></p>
                 </div>
                 <div class="service-item">
-                    <h3>النقل السريع</h3>
-                    <p>توصيل فوري للطلبات العاجلة بكفاءة عالية وفي الوقت المحدد.</p>
+                    <h3 data-ar="النقل السريع" data-de="Express transport">النقل السريع</h3>
+                    <p data-ar="توصيل فوري للطلبات العاجلة بكفاءة عالية وفي الوقت المحدد." data-de="Sofortige Lieferung dringender Bestellungen mit hoher Effizienz und pünktlich."></p>
                 </div>
                 <div class="service-item">
-                    <h3>حلول لوجستية</h3>
-                    <p>إدارة سلسلة التوريد باحترافية لتلبية احتياجات الأعمال.</p>
+                    <h3 data-ar="حلول لوجستية" data-de="Logistiklösungen">حلول لوجستية</h3>
+                    <p data-ar="إدارة سلسلة التوريد باحترافية لتلبية احتياجات الأعمال." data-de="Professionelle Verwaltung der Lieferkette, um die Bedürfnisse von Unternehmen zu erfüllen."></p>
                 </div>
             </div>
         </div>
@@ -52,8 +58,8 @@
     <!-- قسم التواصل -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>تواصلوا معنا</h2>
-            <p>انضموا إلينا على وسائل التواصل الاجتماعي أو تواصلوا مباشرة للاستفسارات!</p>
+            <h2 data-ar="تواصلوا معنا" data-de="Kontaktieren Sie uns">تواصلوا معنا</h2>
+            <p data-ar="انضموا إلينا على وسائل التواصل الاجتماعي أو تواصلوا مباشرة للاستفسارات!" data-de="Folgen Sie uns in den sozialen Medien oder kontaktieren Sie uns direkt für Anfragen!"></p>
             <div class="social-links">
                 <a href="YOUR_LINKEDIN_URL" class="social-btn linkedin">LinkedIn</a>
                 <a href="YOUR_INSTAGRAM_URL" class="social-btn instagram">Instagram</a>
@@ -65,8 +71,10 @@
     <!-- تذييل الصفحة -->
     <footer>
         <div class="container">
-            <p>© 2025 BlitzMove Transporter. جميع الحقوق محفوظة.</p>
+            <p data-ar="© 2025 BlitzMove Transporter. جميع الحقوق محفوظة." data-de="© 2025 BlitzMove Transporter. Alle Rechte vorbehalten."></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
